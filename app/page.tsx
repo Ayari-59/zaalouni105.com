@@ -375,7 +375,9 @@ export default function Home() {
           </h3>
           <p className="mt-4 text-faded">
             Connecte-toi avec ton compte Facebook et laisse ton souvenir du but
-            — il restera gravé ici, pour l'éternité.
+            — il restera gravé ici, pour l'éternité. La connexion s'ouvre dans
+            une petite fenêtre : pense à autoriser les pop-ups si ton
+            navigateur la bloque.
           </p>
           <div className="mt-8 rounded-2xl border border-white/10 bg-night p-4 sm:p-6">
             <FacebookComments />
