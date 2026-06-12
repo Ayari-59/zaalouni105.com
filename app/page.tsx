@@ -97,8 +97,13 @@ export default function Home() {
           Dimanche 10 mai 2026 · Stade Hammadi-Agrebi, Radès
         </p>
 
-        <h1 className="font-display relative mt-6 text-[26vw] leading-none text-ca sm:text-[11rem] lg:text-[14rem]">
-          105′
+        <h1 className="font-display relative mt-6 leading-none">
+          <span className="block text-2xl tracking-[0.25em] text-cream/70 sm:text-4xl">
+            90′ + 14′ =
+          </span>
+          <span className="mt-2 block text-[26vw] text-ca sm:text-[11rem] lg:text-[14rem]">
+            105′
+          </span>
         </h1>
 
         <h2 className="font-display relative mt-2 text-3xl uppercase tracking-wide text-cream sm:text-5xl">
