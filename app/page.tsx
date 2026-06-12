@@ -346,6 +346,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ——— ALL4ONE ——— */}
+      <section className="border-t border-white/10 bg-ca">
+        <div className="mx-auto max-w-3xl px-6 py-20 text-center">
+          <p className="text-xs uppercase tracking-[0.35em] text-white/70">
+            All4One
+          </p>
+          <h3 className="font-display mt-3 text-3xl uppercase text-white sm:text-5xl">
+            Pour que le rêve continue
+          </h3>
+          <p className="mx-auto mt-6 max-w-xl text-white/85">
+            La 105ᵉ a rendu le titre au peuple rouge et blanc. La suite
+            s'écrit ensemble : All4One est la plateforme officielle du Club
+            Africain pour bâtir un club fort et stable — supporter par
+            supporter.
+          </p>
+          <a
+            href="https://all4one.clubafricain.com/fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-display mt-10 inline-block rounded-full bg-night px-10 py-4 text-lg uppercase tracking-wide text-white transition-transform hover:scale-105"
+          >
+            Rejoindre All4One ❤️🤍
+          </a>
+          <p className="mt-4 text-sm text-white/70">
+            all4one.clubafricain.com
+          </p>
+        </div>
+      </section>
+
       {/* ——— FOOTER ——— */}
       <footer className="border-t border-white/10 px-6 py-12 text-center">
         <p className="font-display text-xl uppercase text-cream">
@@ -356,7 +385,15 @@ export default function Home() {
           au Club Africain, à la FTF ni à la LNFP.
         </p>
         <p className="mt-4 text-sm text-faded">
-          Rouge et blanc, pour toujours. ❤️🤍
+          Rouge et blanc, pour toujours. ❤️🤍 ·{" "}
+          <a
+            className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
+            href="https://all4one.clubafricain.com/fr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            All4One — pour que le rêve continue
+          </a>
         </p>
       </footer>
     </main>
