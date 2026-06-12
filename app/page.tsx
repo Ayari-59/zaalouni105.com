@@ -386,41 +386,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ——— ALL4ONE ——— */}
+      {/* ——— SOUTENIR : ALL4ONE & SOCIOS ——— */}
       <section className="border-t border-white/10 bg-ca">
-        <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-          <a
-            href="https://all4one.clubafricain.com/fr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-2xl bg-white px-6 py-4 shadow-lg transition-transform hover:scale-105"
-          >
-            <img
-              src="/all4one-logo.png"
-              alt="All4One — la plateforme officielle du Club Africain"
-              className="h-12 w-auto sm:h-16"
-            />
-          </a>
-          <h3 className="font-display mt-8 text-3xl uppercase text-white sm:text-5xl">
+        <div className="mx-auto max-w-4xl px-6 py-20 text-center">
+          <h3 className="font-display text-3xl uppercase text-white sm:text-5xl">
             Pour que le rêve continue
           </h3>
           <p className="mx-auto mt-6 max-w-xl text-white/85">
             La 105ᵉ a rendu le titre au peuple rouge et blanc. La suite
-            s'écrit ensemble : All4One est la plateforme officielle du Club
-            Africain pour bâtir un club fort et stable — supporter par
-            supporter.
+            s'écrit ensemble — deux maisons pour s'engager aux côtés du club,
+            supporter par supporter :
           </p>
-          <a
-            href="https://all4one.clubafricain.com/fr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-display mt-10 inline-block rounded-full bg-night px-10 py-4 text-lg uppercase tracking-wide text-white transition-transform hover:scale-105"
-          >
-            Rejoindre All4One ❤️🤍
-          </a>
-          <p className="mt-4 text-sm text-white/70">
-            all4one.clubafricain.com
-          </p>
+          <div className="mx-auto mt-10 grid max-w-2xl gap-6 sm:grid-cols-2">
+            <a
+              href="https://all4one.clubafricain.com/fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center gap-4 rounded-2xl bg-white px-6 py-8 shadow-lg transition-transform hover:scale-105"
+            >
+              <span className="flex h-24 items-center">
+                <img
+                  src="/all4one-logo.png"
+                  alt="All4One — la plateforme officielle du Club Africain"
+                  className="h-14 w-auto"
+                />
+              </span>
+              <span className="text-sm text-night/80">
+                La plateforme officielle du Club Africain : financer les
+                projets du club et bâtir sa stabilité.
+              </span>
+              <span className="font-display mt-auto text-sm uppercase tracking-wide text-ca">
+                all4one.clubafricain.com →
+              </span>
+            </a>
+            <a
+              href="https://www.sociosclubafricain.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center gap-4 rounded-2xl bg-white px-6 py-8 shadow-lg transition-transform hover:scale-105"
+            >
+              <span className="flex h-24 items-center">
+                <img
+                  src="/socios-logo.png"
+                  alt="Socios Clubistes — l'association des supporters du Club Africain"
+                  className="h-24 w-auto"
+                />
+              </span>
+              <span className="text-sm text-night/80">
+                L'association des supporters : adhérer et peser sur l'avenir —
+                un membre, une voix.
+              </span>
+              <span className="font-display mt-auto text-sm uppercase tracking-wide text-ca">
+                sociosclubafricain.org →
+              </span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -442,6 +462,15 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             All4One — pour que le rêve continue
+          </a>{" "}
+          ·{" "}
+          <a
+            className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
+            href="https://www.sociosclubafricain.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Socios Clubistes
           </a>
         </p>
         <p className="mt-2 text-xs text-faded/80">
