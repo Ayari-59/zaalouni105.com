@@ -14,10 +14,12 @@ declare global {
 const SDK_SRC =
   "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v23.0";
 
-// Où laisser son souvenir quand Meta masque le module (visiteurs européens
-// sans consentement cookies, bloqueurs de pub) : commenter directement sur
-// Facebook fonctionne toujours. Remplaçable par un post dédié du site.
-const POST_FACEBOOK = "https://www.facebook.com/reel/2108389939941426";
+// Post Facebook dédié du site (« Où étais-tu à la 105ᵉ ? ») : destination
+// du repli quand Meta masque le module (visiteurs européens sans
+// consentement cookies, bloqueurs de pub) — commenter directement sur
+// Facebook fonctionne toujours.
+const POST_FACEBOOK =
+  "https://www.facebook.com/hayari/posts/pfbid0383aAsYq4Y14NS2EVA5NwDpRqyfF9GJznqwer9kbWca7zMBfj7cJJiA6ir3YrbKmAl";
 
 export default function FacebookComments() {
   const [indisponible, setIndisponible] = useState(false);
