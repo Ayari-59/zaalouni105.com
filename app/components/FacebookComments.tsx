@@ -9,7 +9,7 @@ declare global {
 }
 
 const SDK_SRC =
-  "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v23.0";
+  "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v23.0&appId=5465458693678296";
 
 export default function FacebookComments() {
   const [sdkBloque, setSdkBloque] = useState(false);
