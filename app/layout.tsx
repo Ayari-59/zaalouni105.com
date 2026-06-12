@@ -15,6 +15,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zaalouni105.com"),
+  // "./" = canonique propre à chaque page, résolue sur metadataBase
+  // (l'apex sans www) — évite le contenu dupliqué www / sans-www.
+  alternates: {
+    canonical: "./",
+  },
   title: "Zaalouni 105′ — Le but du sacre · 10 mai 2026",
   description:
     "Mémorial du but de Ghaith Zaalouni à la 105ᵉ minute (90+14) du derby EST 0 – 1 Club Africain, le 10 mai 2026 à Radès. Le but du 14ᵉ titre de champion de Tunisie, onze ans après.",
