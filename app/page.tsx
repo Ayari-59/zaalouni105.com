@@ -152,7 +152,7 @@ export default function Home() {
           <div className="relative aspect-video">
             <iframe
               className="absolute inset-0 h-full w-full"
-              src="https://www.youtube-nocookie.com/embed/rSzt6pQKIOc"
+              src="https://www.youtube-nocookie.com/embed/qBsRqhUEchg"
               title="Le but de Ghaith Zaalouni contre l'EST — 10 mai 2026"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
