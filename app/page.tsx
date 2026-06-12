@@ -6,7 +6,7 @@ const chrono = [
   {
     minute: "0′",
     title: "Coup d'envoi du 144ᵉ derby",
-    text: "Radès est plein, l'enjeu est limpide : l'Espérance doit gagner pour garder le titre en vie. Au Club Africain, un point suffit pour être champion.",
+    text: "Radès est sang et or : le derby se joue devant le seul public espérantiste. L'enjeu est limpide — l'EST doit gagner pour garder le titre en vie ; au Club Africain, un point suffit pour être champion.",
   },
   {
     minute: "38′",
@@ -37,7 +37,7 @@ const chrono = [
   {
     minute: "VAR",
     title: "Penalty check… but validé",
-    text: "Le temps s'arrête : la vidéo vérifie le pénalty réclamé sur l'action de Danho. De longues secondes… et au final, rien. But validé. Radès explose une seconde fois.",
+    text: "Explosion de joie clubiste, puis l'attente : l'arbitre porte la main à son oreillette, et on ne sait pas ce qui se dit. De longues secondes… Au final : rien. But validé.",
   },
   {
     minute: "FIN",
@@ -240,10 +240,12 @@ export default function Home() {
           <div className="mt-8 space-y-6 text-base leading-relaxed text-faded sm:text-lg">
             <p>
               90ᵉ minute. L'arbitre autrichien lève sa pancarte : quatorze
-              minutes additionnelles. À Radès, on ne crie plus — on compte.
-              Un point suffit au Club Africain. Huit cent quarante secondes
-              entre un peuple et son premier titre depuis onze ans. La bombe
-              est posée sous la table, et elle fait tic-tac.
+              minutes additionnelles. Radès est sang et or — le derby se joue
+              devant le seul public espérantiste, et tout le stade pousse pour
+              le but qui sauverait le titre. Loin des tribunes, le peuple
+              clubiste compte les secondes devant les écrans. Un point suffit.
+              Huit cent quarante secondes. La bombe est posée sous la table,
+              et elle fait tic-tac.
             </p>
             <p>
               105ᵉ minute. Dernière attaque de l'Espérance. Tir de Danho,
@@ -261,12 +263,15 @@ export default function Home() {
               foudroyant. Memmiche battu. 0-1.
             </p>
             <p>
-              Radès explose — puis se fige. « Penalty check » pour l'EST :
-              là-haut, une régie repasse l'action de Danho image par image.
-              Les joueurs clubistes n'osent pas célébrer, un pays entier reste
-              suspendu à un écran. Les secondes pèsent des tonnes. Verdict :
-              rien. But validé. Le sifflet final peut libérer onze ans
-              d'attente — le Club Africain est champion de Tunisie.
+              Le ballon est au fond, et le monde se fend en deux. Les joueurs
+              clubistes explosent de joie, et avec eux tout un peuple, devant
+              chaque écran du pays — pendant que les tribunes sang et or
+              réclament encore leur pénalty. Puis tout se fige. L'arbitre
+              porte la main à son oreillette. Il écoute. On ne sait pas ce qui
+              se dit. Personne ne le sait. La joie reste suspendue en plein
+              vol, les secondes pèsent des tonnes… Et puis rien. Rien à
+              signaler. But validé. Le Club Africain est champion de Tunisie —
+              onze ans après.
             </p>
           </div>
         </div>
