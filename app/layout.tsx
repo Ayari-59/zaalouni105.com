@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     "Mémorial du but de Ghaith Zaalouni à la 105ᵉ minute (90+14) du derby EST 0 – 1 Club Africain, le 10 mai 2026 à Radès. Le but du 14ᵉ titre de champion de Tunisie, onze ans après.",
   facebook: {
-    appId: "5465458693678296",
+    appId: "1329872415220313",
   },
   openGraph: {
     title: "Zaalouni 105′ — Le but du sacre",
