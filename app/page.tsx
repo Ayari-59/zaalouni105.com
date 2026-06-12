@@ -1,4 +1,5 @@
 import Counter from "./components/Counter";
+import FacebookComments from "./components/FacebookComments";
 
 const chrono = [
   {
@@ -24,7 +25,7 @@ const chrono = [
   {
     minute: "105′",
     title: "LE BUT",
-    text: "Contre-pied foudroyant. Ghaith Zaalouni, le défenseur, s'arrache dans un sprint de légende, laisse Ben Abda et Souhaili dans son dos et inscrit l'unique but du match. 0-1.",
+    text: "Tir foudroyant. Ghaith Zaalouni, le défenseur, s'arrache dans un sprint de légende, laisse Ben Abda et Shili dans son dos et fusille Memmiche pour l'unique but du match. 0-1.",
     goal: true,
   },
   {
@@ -106,7 +107,7 @@ export default function Home() {
 
         <p className="relative mx-auto mt-6 max-w-xl text-balance text-base text-faded sm:text-lg">
           Quatorze minutes de temps additionnel. Un défenseur lancé comme une
-          flèche. Un contre-pied foudroyant. Et le Club Africain champion de
+          flèche. Un tir foudroyant. Et le Club Africain champion de
           Tunisie, onze ans après.
         </p>
 
@@ -138,6 +139,49 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {/* ——— LA VIDÉO ——— */}
+      <section className="mx-auto max-w-4xl px-6 pt-20">
+        <p className="text-center text-xs uppercase tracking-[0.35em] text-ca-soft">
+          Revivre le but
+        </p>
+        <h3 className="font-display mt-3 text-center text-3xl uppercase text-cream sm:text-4xl">
+          La 105ᵉ, en images
+        </h3>
+        <div className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-coal shadow-[0_0_60px_-15px_rgba(225,29,46,0.45)]">
+          <div className="relative aspect-video">
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube-nocookie.com/embed/rSzt6pQKIOc"
+              title="Le but de Ghaith Zaalouni contre l'EST — 10 mai 2026"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+              allowFullScreen
+            />
+          </div>
+        </div>
+        <p className="mt-4 text-center text-sm text-faded">
+          Voir aussi :{" "}
+          <a
+            className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
+            href="https://www.youtube.com/watch?v=px2zzJoAzZM"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            le résumé complet du derby
+          </a>{" "}
+          ·{" "}
+          <a
+            className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
+            href="https://www.youtube.com/watch?v=yDGGD-RlHIc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            le match en intégralité
+          </a>
+        </p>
+      </section>
 
       {/* ——— COMPTEUR ——— */}
       <section className="mx-auto max-w-4xl px-6 py-20">
@@ -176,10 +220,10 @@ export default function Home() {
               retient son souffle.
             </p>
             <p className="border-l-2 border-ca pl-5 text-cream">
-              Et à l'ultime seconde, sur un contre-pied foudroyant, Ghaith
-              Zaalouni — le défenseur — s'arrache. Un sprint de légende, Ben
-              Abda et Souhaili battus de vitesse, et le ballon au fond. 0-1. La
-              105ᵉ minute entre dans l'histoire.
+              Et à l'ultime seconde, Ghaith Zaalouni — le défenseur —
+              s'arrache. Un sprint de légende, Ben Abda et Shili battus de
+              vitesse, et un tir foudroyant qui ne laisse aucune chance à
+              Memmiche. 0-1. La 105ᵉ minute entre dans l'histoire.
             </p>
             <p>
               Quelques instants plus tard, le sifflet final libère tout un
@@ -276,6 +320,25 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* ——— LE MUR DES SUPPORTERS ——— */}
+      <section className="border-t border-white/10 bg-coal/60">
+        <div className="mx-auto max-w-3xl px-6 py-20">
+          <p className="text-xs uppercase tracking-[0.35em] text-ca-soft">
+            Le mur des supporters
+          </p>
+          <h3 className="font-display mt-3 text-3xl uppercase text-cream sm:text-4xl">
+            Où étais-tu à la 105ᵉ ?
+          </h3>
+          <p className="mt-4 text-faded">
+            Connecte-toi avec ton compte Facebook et laisse ton souvenir du but
+            — il restera gravé ici, pour l'éternité.
+          </p>
+          <div className="mt-8 rounded-2xl border border-white/10 bg-night p-4 sm:p-6">
+            <FacebookComments />
+          </div>
+        </div>
       </section>
 
       {/* ——— FOOTER ——— */}
