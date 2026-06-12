@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   title: "Zaalouni 105′ — Le but du sacre · 10 mai 2026",
   description:
     "Mémorial du but de Ghaith Zaalouni à la 105ᵉ minute (90+14) du derby EST 0 – 1 Club Africain, le 10 mai 2026 à Radès. Le but du 14ᵉ titre de champion de Tunisie, onze ans après.",
-  // Balise meta fb:app_id UNIQUEMENT (satisfait le débogueur de partage et
-  // mappe la modération sur l'app dont le proprietaire est admin). Surtout
-  // ne JAMAIS remettre l'appId dans SDK_SRC (FacebookComments.tsx) : c'est
-  // lui qui verrouille la connexion des visiteurs (accès avancé réservé
-  // aux entreprises vérifiées).
+  // fb:admins = modération du mur pour le compte 1199644816, SANS app.
+  // ATTENTION : ne PAS remettre fb:app_id tant que l'app n'est pas en mode
+  // Live — un fil de commentaires associé à une app en développement bloque
+  // la publication (constaté le 12/06/2026). L'avertissement « fb:app_id
+  // manquant » du débogueur de partage est cosmétique et sans conséquence.
   facebook: {
-    appId: "1329872415220313",
+    admins: ["1199644816"],
   },
   openGraph: {
     title: "Zaalouni 105′ — Le but du sacre",
