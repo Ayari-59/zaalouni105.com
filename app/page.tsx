@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AmbientSound from "./components/AmbientSound";
 import Counter from "./components/Counter";
 import FacebookComments from "./components/FacebookComments";
@@ -453,6 +454,21 @@ export default function Home() {
           >
             d'après le reel d'Akrem Krayem
           </a>
+        </p>
+        <p className="mt-2 text-xs text-faded/80">
+          <Link
+            className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
+            href="/confidentialite"
+          >
+            Politique de confidentialité
+          </Link>{" "}
+          ·{" "}
+          <Link
+            className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
+            href="/suppression-donnees"
+          >
+            Suppression des données
+          </Link>
         </p>
       </footer>
     </main>
