@@ -412,9 +412,7 @@ export default function Home() {
                 />
               </span>
               <span className="text-sm text-night/80">
-                « Aidez à construire l'avenir du Club avec un billet de
-                soutien — soutenez votre équipe de n'importe où dans le
-                monde. »
+                « Soutenez votre équipe de n'importe où dans le monde »
               </span>
               <span className="font-display mt-auto text-sm uppercase tracking-wide text-ca">
                 all4one.clubafricain.com →
@@ -434,9 +432,7 @@ export default function Home() {
                 />
               </span>
               <span className="text-sm text-night/80">
-                « L'Association des supporters du Club Africain, ouverte à
-                tous les Clubistes du monde entier », selon le principe
-                démocratique « un membre, une voix ».
+                « Let's stand together as one »
               </span>
               <span className="font-display mt-auto text-sm uppercase tracking-wide text-ca">
                 sociosclubafricain.org →
