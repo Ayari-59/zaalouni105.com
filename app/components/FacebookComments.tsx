@@ -14,30 +14,36 @@ declare global {
 const SDK_SRC =
   "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v23.0";
 
+// Où laisser son souvenir quand Meta masque le module (visiteurs européens
+// sans consentement cookies, bloqueurs de pub) : commenter directement sur
+// Facebook fonctionne toujours. Remplaçable par un post dédié du site.
+const POST_FACEBOOK = "https://www.facebook.com/reel/2108389939941426";
+
 export default function FacebookComments() {
-  const [sdkBloque, setSdkBloque] = useState(false);
+  const [indisponible, setIndisponible] = useState(false);
 
   useEffect(() => {
     // SDK déjà chargé (navigation client / HMR) : re-parser les balises XFBML.
     if (window.FB) {
       window.FB.XFBML.parse();
-      return;
-    }
-    if (!document.getElementById("facebook-jssdk")) {
+    } else if (!document.getElementById("facebook-jssdk")) {
       const script = document.createElement("script");
       script.id = "facebook-jssdk";
       script.src = SDK_SRC;
       script.async = true;
       script.defer = true;
       script.crossOrigin = "anonymous";
-      script.onerror = () => setSdkBloque(true);
+      script.onerror = () => setIndisponible(true);
       document.body.appendChild(script);
     }
-    // Bloqueur de pub ou cookies tiers : si le SDK n'est pas là au bout de
-    // 8 s, on affiche l'aide au lieu de laisser un vide silencieux.
+    // En Europe, Meta sert un module VIDE (iframe hauteur 0) sans
+    // consentement à ses cookies ; un adblock peut aussi bloquer le SDK.
+    // Dans les deux cas, on affiche l'alternative au lieu d'un trou béant.
     const timer = window.setTimeout(() => {
-      if (!window.FB) setSdkBloque(true);
-    }, 8000);
+      const iframe = document.querySelector(".fb-comments iframe");
+      const hauteur = iframe ? iframe.getBoundingClientRect().height : 0;
+      if (!window.FB || hauteur < 40) setIndisponible(true);
+    }, 7000);
     return () => window.clearTimeout(timer);
   }, []);
 
@@ -52,16 +58,25 @@ export default function FacebookComments() {
         data-order-by="reverse_time"
         data-colorscheme="dark"
       />
-      {sdkBloque && (
-        <div className="mt-4 rounded-xl border border-ca/40 bg-coal p-4 text-sm text-faded">
+      {indisponible && (
+        <div className="rounded-xl border border-ca/40 bg-night p-5 text-sm text-faded">
           <p className="font-semibold text-cream">
-            Le module Facebook n'a pas pu se charger.
+            Le module de commentaires est masqué chez toi.
           </p>
-          <ul className="mt-2 list-inside list-disc space-y-1">
-            <li>Désactive ton bloqueur de publicité pour ce site</li>
-            <li>Autorise les cookies tiers et les fenêtres pop-up</li>
-            <li>Connecte-toi à facebook.com dans ce navigateur, puis recharge</li>
-          </ul>
+          <p className="mt-2">
+            En Europe, Meta n'affiche ses commentaires qu'aux visiteurs ayant
+            accepté ses cookies — et certains bloqueurs de pub le masquent
+            aussi. Pas grave : laisse ton souvenir directement sur Facebook,
+            ça marche toujours.
+          </p>
+          <a
+            href={POST_FACEBOOK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-display mt-4 inline-block rounded-full bg-ca px-6 py-3 text-base uppercase tracking-wide text-white transition-transform hover:scale-105"
+          >
+            Laisser mon souvenir sur Facebook
+          </a>
         </div>
       )}
     </>
