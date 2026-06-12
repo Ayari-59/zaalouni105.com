@@ -186,6 +186,38 @@ export default function Home() {
             le match en intégralité
           </a>
         </p>
+
+        <div className="mt-14">
+          <p className="text-center text-xs uppercase tracking-[0.35em] text-ca-soft">
+            La bande-son
+          </p>
+          <h4 className="font-display mt-3 text-center text-2xl uppercase text-cream sm:text-3xl">
+            « Pump it up, Za3lagoool » 🎵
+          </h4>
+          <div className="mx-auto mt-8 w-full max-w-[280px] overflow-hidden rounded-2xl border border-white/10 bg-coal">
+            <div className="relative aspect-[9/16]">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100006089801570%2Fvideos%2F2108389939941426%2F&show_text=false"
+                title="Pump It Up Za3lagool — le chant du but de Zaalouni"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                loading="lazy"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          <p className="mt-4 text-center text-sm text-faded">
+            Monte le son.{" "}
+            <a
+              className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
+              href="https://www.facebook.com/reel/2108389939941426"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ouvrir le reel sur Facebook
+            </a>
+          </p>
+        </div>
       </section>
 
       {/* ——— COMPTEUR ——— */}
