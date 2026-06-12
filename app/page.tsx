@@ -465,6 +465,13 @@ export default function Home() {
           ·{" "}
           <Link
             className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
+            href="/conditions"
+          >
+            Conditions de service
+          </Link>{" "}
+          ·{" "}
+          <Link
+            className="underline decoration-ca/60 underline-offset-4 hover:text-ca-soft"
             href="/suppression-donnees"
           >
             Suppression des données
