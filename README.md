@@ -45,7 +45,7 @@ puis rattacher le domaine `zaalouni105.com` dans les réglages du projet Vercel.
 | Date | Dimanche 10 mai 2026, stade Hammadi-Agrebi (Radès) |
 | Score | EST 0 – 1 Club Africain |
 | Buteur | Ghaith Zaalouni (défenseur), 90+14 — la 105ᵉ minute |
-| L'action | Sprint devant Ben Abda et Shili, tir foudroyant devant le gardien Memmiche |
+| L'action | Tir de Danho repoussé, pénalty réclamé par l'EST ; contre de Kadida qui temporise face à Mériah et sert Zaalouni (latéral droit) : tir foudroyant devant Memmiche. Penalty check… but validé |
 | Conséquence | CA champion de Tunisie (14ᵉ titre, le premier depuis 2015), 65 pts, +5 sur l'EST |
 
 Sources : La Presse de Tunisie, WebManagerCenter, Football Tunisien, Panafrica Football.

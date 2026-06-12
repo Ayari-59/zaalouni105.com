@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Zaalouni 105′ — Le but du sacre",
     description:
-      "90+14. Un sprint de légende, un tir foudroyant, et le Club Africain champion de Tunisie, onze ans après.",
+      "90+14. Un contre assassin, un tir foudroyant, un penalty check interminable… et le Club Africain champion de Tunisie, onze ans après.",
     url: "https://zaalouni105.com",
     siteName: "Zaalouni105.com",
     locale: "fr_FR",

@@ -25,9 +25,19 @@ const chrono = [
   },
   {
     minute: "105′",
+    title: "La dernière attaque",
+    text: "Attaque espérantiste, tir de Danho repoussé. Les joueurs de l'EST réclament un pénalty d'une seule voix. L'arbitre laisse jouer.",
+  },
+  {
+    minute: "105′",
     title: "LE BUT",
-    text: "Tir foudroyant. Ghaith Zaalouni, le défenseur, s'arrache dans un sprint de légende, laisse Ben Abda et Shili dans son dos et fusille Memmiche pour l'unique but du match. 0-1.",
+    text: "Kadida part en contre et temporise face à Mériah, avant de servir Zaalouni — le latéral droit — lancé à pleine vitesse. Tir foudroyant, Memmiche battu. 0-1.",
     goal: true,
+  },
+  {
+    minute: "VAR",
+    title: "Penalty check… but validé",
+    text: "Le temps s'arrête : la vidéo vérifie le pénalty réclamé sur l'action de Danho. De longues secondes… et au final, rien. But validé. Radès explose une seconde fois.",
   },
   {
     minute: "FIN",
@@ -127,9 +137,9 @@ export default function Home() {
         </h2>
 
         <p className="relative mx-auto mt-6 max-w-xl text-balance text-base text-faded sm:text-lg">
-          Quatorze minutes de temps additionnel. Un défenseur lancé comme une
-          flèche. Un tir foudroyant. Et le Club Africain champion de
-          Tunisie, onze ans après.
+          Quatorze minutes de temps additionnel. Un contre assassin, un
+          latéral droit lancé comme une flèche, un tir foudroyant. Et le Club
+          Africain champion de Tunisie, onze ans après.
         </p>
 
         <div className="relative mt-10 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full border border-white/10 bg-coal px-6 py-3 text-sm sm:text-base">
@@ -229,29 +239,34 @@ export default function Home() {
           </h3>
           <div className="mt-8 space-y-6 text-base leading-relaxed text-faded sm:text-lg">
             <p>
-              Tout le match, l'Espérance a poussé. Possession, siège du camp
-              clubiste, entrées de Hemidhi et de Sasse : le 144ᵉ derby de la
-              capitale n'allait que dans un sens — sauf au tableau d'affichage.
-              En face, le bloc rouge et blanc défendait avec une discipline
-              chirurgicale. Un point suffisait au titre. Mais l'histoire avait
-              prévu mieux.
+              90ᵉ minute. L'arbitre autrichien lève sa pancarte : quatorze
+              minutes additionnelles. À Radès, on ne crie plus — on compte.
+              Un point suffit au Club Africain. Huit cent quarante secondes
+              entre un peuple et son premier titre depuis onze ans. La bombe
+              est posée sous la table, et elle fait tic-tac.
             </p>
             <p>
-              Fumigènes, interruption, tension irrespirable. L'arbitre
-              autrichien affiche quatorze minutes de temps additionnel. Radès
-              retient son souffle.
+              105ᵉ minute. Dernière attaque de l'Espérance. Tir de Danho,
+              repoussé. Dix bras se lèvent d'un seul coup — pénalty !
+              réclament les joueurs de l'EST. Le stade entier se tourne vers
+              l'arbitre. Rien. Le jeu continue. Et le ballon, lui, sait déjà
+              où il va.
             </p>
             <p className="border-l-2 border-ca pl-5 text-cream">
-              Et à l'ultime seconde, Ghaith Zaalouni — le défenseur —
-              s'arrache. Un sprint de légende, Ben Abda et Shili battus de
-              vitesse, et un tir foudroyant qui ne laisse aucune chance à
-              Memmiche. 0-1. La 105ᵉ minute entre dans l'histoire.
+              Kadida s'en empare et part en contre. Le voilà face à Mériah —
+              et l'impensable se produit : il temporise. Deux secondes qui
+              durent onze ans. Puis la passe, au moment exact où surgit à
+              pleine vitesse le latéral droit que personne n'attendait là :
+              Ghaith Zaalouni, Ben Abda et Shili avalés par son sprint. Tir
+              foudroyant. Memmiche battu. 0-1.
             </p>
             <p>
-              Quelques instants plus tard, le sifflet final libère tout un
-              peuple : le Club Africain est champion de Tunisie pour la 14ᵉ
-              fois — la première depuis 2015. Onze ans d'attente, effacés par
-              la course folle d'un défenseur.
+              Radès explose — puis se fige. « Penalty check » pour l'EST :
+              là-haut, une régie repasse l'action de Danho image par image.
+              Les joueurs clubistes n'osent pas célébrer, un pays entier reste
+              suspendu à un écran. Les secondes pèsent des tonnes. Verdict :
+              rien. But validé. Le sifflet final peut libérer onze ans
+              d'attente — le Club Africain est champion de Tunisie.
             </p>
           </div>
         </div>
@@ -267,7 +282,7 @@ export default function Home() {
         </h3>
         <ol className="relative mt-10 space-y-10 border-l border-white/15 pl-8">
           {chrono.map((item) => (
-            <li key={item.minute} className="relative">
+            <li key={item.title} className="relative">
               <span
                 className={`absolute -left-8 top-1 h-3 w-3 -translate-x-1/2 rounded-full ${
                   item.goal ? "bg-ca shadow-[0_0_18px_4px_rgba(225,29,46,0.6)]" : "bg-white/30"
