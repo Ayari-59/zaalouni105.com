@@ -32,6 +32,21 @@ export const metadata: Metadata = {
     siteName: "Zaalouni105.com",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ghaith Zaalouni célèbre son but de la 105ᵉ minute — EST 0-1 Club Africain, 10 mai 2026 à Radès",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zaalouni 105′ — Le but du sacre",
+    description:
+      "90+14. Un contre assassin, un tir foudroyant… et le Club Africain champion de Tunisie, onze ans après.",
+    images: ["/og-image.jpg"],
   },
 };
 
