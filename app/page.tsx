@@ -412,8 +412,9 @@ export default function Home() {
                 />
               </span>
               <span className="text-sm text-night/80">
-                La plateforme officielle du Club Africain : financer les
-                projets du club et bâtir sa stabilité.
+                « Aidez à construire l'avenir du Club avec un billet de
+                soutien — soutenez votre équipe de n'importe où dans le
+                monde. »
               </span>
               <span className="font-display mt-auto text-sm uppercase tracking-wide text-ca">
                 all4one.clubafricain.com →
@@ -433,8 +434,9 @@ export default function Home() {
                 />
               </span>
               <span className="text-sm text-night/80">
-                L'association des supporters : adhérer et peser sur l'avenir —
-                un membre, une voix.
+                « L'Association des supporters du Club Africain, ouverte à
+                tous les Clubistes du monde entier », selon le principe
+                démocratique « un membre, une voix ».
               </span>
               <span className="font-display mt-auto text-sm uppercase tracking-wide text-ca">
                 sociosclubafricain.org →
