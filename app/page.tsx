@@ -349,10 +349,19 @@ export default function Home() {
       {/* ——— ALL4ONE ——— */}
       <section className="border-t border-white/10 bg-ca">
         <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-          <p className="text-xs uppercase tracking-[0.35em] text-white/70">
-            All4One
-          </p>
-          <h3 className="font-display mt-3 text-3xl uppercase text-white sm:text-5xl">
+          <a
+            href="https://all4one.clubafricain.com/fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-2xl bg-white px-6 py-4 shadow-lg transition-transform hover:scale-105"
+          >
+            <img
+              src="/all4one-logo.png"
+              alt="All4One — la plateforme officielle du Club Africain"
+              className="h-12 w-auto sm:h-16"
+            />
+          </a>
+          <h3 className="font-display mt-8 text-3xl uppercase text-white sm:text-5xl">
             Pour que le rêve continue
           </h3>
           <p className="mx-auto mt-6 max-w-xl text-white/85">
