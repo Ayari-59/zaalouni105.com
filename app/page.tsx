@@ -78,6 +78,20 @@ export default function Home() {
       <AmbientSound />
       {/* ——— HERO ——— */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 py-24 text-center">
+        <img
+          src="/zaalouni-celebration.jpg"
+          alt=""
+          aria-hidden
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover object-[center_18%] opacity-30 grayscale contrast-110"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(7,7,10,0.85) 0%, rgba(7,7,10,0.35) 38%, rgba(7,7,10,0.5) 68%, #07070a 100%), radial-gradient(ellipse 70% 65% at 50% 42%, transparent 0%, rgba(7,7,10,0.55) 70%, #07070a 100%)",
+          }}
+        />
         <div
           aria-hidden
           className="animate-glow pointer-events-none absolute inset-0"
