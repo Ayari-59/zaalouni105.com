@@ -8,11 +8,11 @@ declare global {
   }
 }
 
-// App Facebook « Zaalouni105 » (type Consommateur). Elle doit rester en
-// mode Live : une app en mode développement casse la connexion pour tous
-// les visiteurs non-admins.
+// Volontairement SANS appId : l'accès avancé Facebook Login (requis pour
+// que les visiteurs se connectent via une app) est réservé aux entreprises
+// vérifiées. Sans app, le module de commentaires fonctionne pour tous.
 const SDK_SRC =
-  "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v23.0&appId=1329872415220313";
+  "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v23.0";
 
 export default function FacebookComments() {
   const [sdkBloque, setSdkBloque] = useState(false);
